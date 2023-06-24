@@ -6,6 +6,7 @@ export default {
     "./src/**/*.{html,js}",
     "./src/components/**/*.{html,jsx,js}",
   ],
+
   theme: {
     extend: {
       colors: {
