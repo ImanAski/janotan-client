@@ -1,16 +1,15 @@
 import StaffCarousel from "../components/StaffCarousel";
 import Header from "../components/Header";
-import Academy from "../components/Academy";
+import Container from "../components/Container";
 
 function Home() {
-    return (
-        <>
-            <Header />
-            <StaffCarousel />
-            <Academy />
-        </>
-    )
+  return (
+    <>
+      <Header />
+      <StaffCarousel />
+      <Container />
+    </>
+  );
 }
-
 
 export default Home;
