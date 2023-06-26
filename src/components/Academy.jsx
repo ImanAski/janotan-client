@@ -1,45 +1,50 @@
+// import Button from "../components/Button";
+import Typography from "@mui/material/Typography";
+import Divider from "@mui/material/Divider";
 import Button from "../components/Button";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Academy() {
   return (
-    <div className="p-30 bg-gradient-to-t from-transparent via-transparent to-black h-full h-screen w-full relative">
-      <div className="p-24 flex-col flex items-center justify-center bg-zinc-800/75">
-        <div className="p-5 flex items-center justify-center space-x-2">
-          {/* <div className="absolute left-1/2 -ml-0.5 w-0.5 h-screen bg-gray-600"></div> */}
-          <Button>کلاس های اکادمی</Button>
-          <Button>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
-              />
-            </svg>
-          </Button>
-          <Button>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75"
-              />
-            </svg>
-          </Button>
+    <div
+      className="p-30 bg-center bg-cover bg-no-repeat  w-full relative bg-[linear-gradient(0deg,rgba(0,0,0,1),rgba(0,0,0,0),rgba(0,0,1)),url('../../public/images/academy-bg.jpg')] h-screen
+    mix-blend-overlay "
+    >
+      <div className="py-24 flex-col flex items-center justify-center  ">
+        <div className=" flex flex-col items-center justify-evenly  max-w-md  ">
+          <div className="w-full flex">
+            <div className="flex-1 self-center justify-end flex"></div>
+            <div className="flex m-5 items-center justify-center">
+              <div className="inline-block h-[80px] min-h-[1em] w-[2.5px]  bg-gray-400 opacity-100 self-center rounded-full"></div>
+            </div>
+            <div className="flex-1 self-center justify-start"></div>
+          </div>
+          <Typography
+            className=" font-semibold tracking-wide uppercase  text-7xl text-white md:text-7xl "
+            variant="h1"
+          >
+            academy
+          </Typography>
+          {/* It seems that the divider should wrapped in Grid Or List-Style Components for functionality */}
+          {/* <Divider
+            className=" text-white text-7xl h-full "
+            orientation="vertical"
+            variant="middle"
+            flexItem
+          >
+            CENTER
+          </Divider> */}
+        </div>
+
+        <div className="w-full flex">
+          <div className="flex-1 self-center justify-end flex">
+          <Button>دپارتمان تحصیلی</Button>
+          </div>
+          <div className="flex m-5 items-center justify-center">
+            <div className="inline-block h-[80px] min-h-[1em] w-[2.5px]  bg-gray-400 opacity-100 self-center rounded-full"></div>
+          </div>
+          <div className="flex-1 self-center justify-start">
+            <Button>آکادمی و کلاس ها</Button>
+          </div>
         </div>
       </div>
     </div>
