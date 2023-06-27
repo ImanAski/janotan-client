@@ -1,4 +1,3 @@
-// import Button from "../components/Button";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import Button from "../components/Button";
@@ -33,7 +32,7 @@ function Academy() {
           >
             CENTER
           </Divider> */}
-        </div>
+      </div>
 
         <div className="w-full flex">
           <div className="flex-1 self-center justify-end flex">

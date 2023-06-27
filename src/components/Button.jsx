@@ -3,7 +3,7 @@ const Button = ({ children, clickHandler, ...restProps }) => {
     <button
       {...restProps}
       type="button"
-      className=" px-3.5 py-2 rounded-xl bg-slate-50/20 text-gray-200 cursor-pointer hover:bg-slate-50/30 text-lg "
+      className=" px-3.5 py-2 rounded-xl bg-slate-50/20 text-gray-200 cursor-pointer hover:bg-slate-50/30 text-md md:text-lg "
       onClick={clickHandler}
     >
       {children}
