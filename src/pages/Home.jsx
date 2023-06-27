@@ -1,13 +1,15 @@
 import StaffCarousel from "../components/StaffCarousel";
 import Header from "../components/Header";
-import Container from "../components/Container";
+import Academy from "../components/Academy";
+import Blog from "../components/Blog";
 
 function Home() {
   return (
     <>
       <Header />
       <StaffCarousel />
-      <Container />
+      <Academy />
+      <Blog />
     </>
   );
 }
