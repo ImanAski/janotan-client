@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 
 // https://vitejs.dev/config/
-export default defineConfig({
-  base: '/janotan-client/',
+export default ({
+  base: "/janotan-client/",
   plugins: [react()],
 })

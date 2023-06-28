@@ -4,7 +4,13 @@ import Button from "../components/Button";
 
 const Library = () => {
   return (
-    <div className="p-30 bg-center bg-cover bg-no-repeat w-full relative bg-[linear-gradient(0deg,rgba(0,0,0,1),rgba(0,0,0,0),rgba(0,0,1)),url('../../public/images/library-bg.jpg')] flex-col flex items-center justify-start  h-screen">
+    <div className="p-30 bg-gradient-to-b from-black via-transparent to-black h-full h-screen w-full relative flex flex-col items-center">
+      <img
+        src="./images/book-background.jfif"
+        alt="#"
+        height="1000px"
+        className="w-full h-full object-cover absolute mix-blend-overlay"
+      />
       {/* relative bg-[linear-gradient(0deg,rgba(0,0,0,1),rgba(0,0,0,0),rgba(0,0,1)),url('../../public/images/academy-bg.jpg')] h-screen
     mix-blend-overlay */}
       <div className=" flex flex-col items-center justify-evenly  max-w-md space-y-4 ">

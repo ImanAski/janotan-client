@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/janotan-client/">
         <Routes>
           <Route index element={<Home />} />
         </Routes>
