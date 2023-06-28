@@ -16,7 +16,7 @@ const Footer = () => {
         height="1000px"
         className="w-full h-full object-cover absolute mix-blend-overlay"
       />
-      <div className="py-24 flex-col flex items-center h-full  ">
+      <div className="py-24 flex-col flex items-center z-40 h-full  ">
         <div className="p-5 z-10 gap-1 flex items-center mb-5 justify-center">
           {/* TODO: Adding related Icons for header Icon buttons */}
           <IconButton px="5" py="5">

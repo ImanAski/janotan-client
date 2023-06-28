@@ -11,7 +11,7 @@ const Blog = () => {
         height="1000px"
         className="w-full h-full object-cover absolute mix-blend-overlay"
       />
-      <div className="py-24 flex-col flex items-center justify-center  space-y-2.5">
+      <div className="py-24 flex-col flex items-center justify-center  z-40 space-y-2.5">
         <div className=" flex flex-col items-center justify-evenly  max-w-md  ">
           <div className="w-full flex">
             <div className="flex-1 self-center justify-end flex"></div>
@@ -21,7 +21,7 @@ const Blog = () => {
             <div className="flex-1 self-center justify-start"></div>
           </div>
           <Typography
-            className=" font-semibold tracking-wide uppercase  text-7xl text-white md:text-7xl "
+            className=" font-semibold tracking-wide uppercase text-4xl  md:text-7xl text-white md:text-7xl "
             variant="h1"
           >
             Blog

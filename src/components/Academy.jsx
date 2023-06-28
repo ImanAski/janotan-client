@@ -5,14 +5,14 @@ import Button from "../components/Button";
 function Academy() {
   return (
     <div
-      className="p-30 bg-gradient-to-b from-black via-transparent to-black h-full h-screen w-full relative flex flex-col items-center">
+      className="p-30 bg-gradient-to-b from-black via-transparent to-black h-full md:h-screen h-[760px] w-full relative flex flex-col items-center">
       <img
           src="./images/academy-bg.jpg"
           alt="#"
           height="1000px"
           className="w-full h-full object-cover absolute mix-blend-overlay"
         />
-      <div className="py-24 flex-col flex items-center justify-center  ">
+      <div className="py-24 flex-col flex items-center justify-center z-40 space-y-2.5">
         <div className=" flex flex-col items-center justify-evenly  max-w-md  ">
           <div className="w-full flex">
             <div className="flex-1 self-center justify-end flex"></div>
@@ -22,7 +22,7 @@ function Academy() {
             <div className="flex-1 self-center justify-start"></div>
           </div>
           <Typography
-            className=" font-semibold tracking-wide uppercase  text-7xl text-white md:text-7xl "
+            className=" font-semibold tracking-wide uppercase text-4xl  md:text-7xl text-white md:text-7xl "
             variant="h1"
           >
             academy
