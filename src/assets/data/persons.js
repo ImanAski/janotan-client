@@ -1,7 +1,7 @@
 export const persons = [
     {
         img: "/images/1.jfif",
-        name: "امیر مسعود مضرابی"
+        name: "امیر مسعود ضرابی"
     },
     {
         img: "/images/2.jfif",
@@ -17,7 +17,7 @@ export const persons = [
     },
     {
         img: "/images/5.jfif",
-        name: "امیر مسعود مضرابی"
+        name: "امیر مسعود ضرابی"
     },
     {
         img: "/images/6.jfif",

@@ -5,7 +5,7 @@ import Button from "../components/Button";
 const Blog = () => {
   return (
     <div
-      className="p-30 bg-center bg-cover bg-no-repeat  w-full relative bg-[linear-gradient(0deg,rgba(0,0,0,1),rgba(0,0,0,0),rgba(0,0,1)),url('../../public/images/blog-bg.jpg')] h-screen
+      className="p-30 bg-center bg-cover bg-no-repeat  w-full relative bg-[linear-gradient(0deg,rgba(0,0,0,1),rgba(0,0,0,0),rgba(0,0,1)),url('../../public/images/academy2-bg.jpg')] h-screen
     mix-blend-overlay "
     >
       <div className="py-24 flex-col flex items-center justify-center  space-y-2.5">
