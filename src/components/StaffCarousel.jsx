@@ -51,7 +51,7 @@ function StaffCarousel() {
             >
               <div className="relative h-full w-full overflow-hidden rounded-2xl bg-[#000]">
                 <img
-                  className="transition-all absolute left-0 md:[&[aria-current='false']]:grayscale top-1/2 h-auto w-full max-w-none -translate-y-1/2 object-cover md:right-1/2 md:h-[640px] md:w-[590px] md:translate-x-1/2"
+                  className="transition-all absolute z-11 bg-gradient-to-l,from-black,to-transparent left-0 md:[&[aria-current='false']]:grayscale top-1/2 h-auto w-full max-w-none -translate-y-1/2 object-cover md:right-1/2 md:h-[640px] md:w-[590px] md:translate-x-1/2"
                   src={person.img}
                   alt={person.name}
                   width="340px"
@@ -66,16 +66,13 @@ function StaffCarousel() {
                 />
                 <div
                   className={classNames(
-                    "flex flex-col items-center justify-left text-white xs:left-8 bottom-8 w-full p-4 transition-[transform,opacity] md:absolute md:p-0",
+                    "flex flex-col items-center justify-left text-white bottom-8 w-full p-4 transition-[transform,opacity] md:absolute md:p-0",
                     activeItem === index
                       ? "md:translate-x-0 md:opacity-100"
                       : "md:translate-x-4 md:opacity-0"
                   )}
                 >
-                  <p className="text-sm uppercase text-primary md:text-lg">
-                    {person.name}
-                  </p>
-                  <p className="text-lg font-bold md:text-3xl">{person.name}</p>
+                  <p className="text-lg p-5 font-bold z-10 md:text-3xl">{person.name}</p>
                 </div>
               </div>
             </li>
