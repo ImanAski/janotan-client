@@ -5,9 +5,13 @@ import Button from "../components/Button";
 function Academy() {
   return (
     <div
-      className="p-30 bg-center bg-cover bg-no-repeat  w-full relative bg-[linear-gradient(0deg,rgba(0,0,0,1),rgba(0,0,0,0),rgba(0,0,1)),url('../../public/images/academy-bg.jpg')] h-screen
-    mix-blend-overlay "
-    >
+      className="p-30 bg-gradient-to-b from-black via-transparent to-black h-full h-screen w-full relative flex flex-col items-center">
+      <img
+          src="./images/academy-bg.jpg"
+          alt="#"
+          height="1000px"
+          className="w-full h-full object-cover absolute mix-blend-overlay"
+        />
       <div className="py-24 flex-col flex items-center justify-center  ">
         <div className=" flex flex-col items-center justify-evenly  max-w-md  ">
           <div className="w-full flex">
