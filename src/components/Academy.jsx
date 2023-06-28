@@ -5,7 +5,7 @@ import Button from "../components/Button";
 function Academy() {
   return (
     <div
-      className="p-30 bg-gradient-to-b from-black via-transparent to-black h-full md:h-screen h-[760px] w-full relative flex flex-col items-center">
+      className="p-30 bg-gradient-to-b from-black via-transparent to-black md:min-h-[760px] md:h-screen h-[760px] w-full relative flex flex-col items-center">
       <img
           src="./images/academy-bg.jpg"
           alt="#"

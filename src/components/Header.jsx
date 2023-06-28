@@ -4,7 +4,7 @@ import IconButton from "./IconButton";
 function Header() {
   return (
     <div>
-      <div className="p-30 bg-gradient-to-b from-black via-transparent to-black h-full h-screen w-full relative">
+      <div className="p-30 bg-gradient-to-b from-black via-transparent to-black md:min-h-[760px] md:h-screen h-[760px] w-full relative">
         <img
           src="./images/book-background.jfif"
           alt="#"

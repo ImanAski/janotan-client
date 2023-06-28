@@ -5,7 +5,7 @@ import Button from "../components/Button";
 const Library = () => {
   return (
     <>
-      <div className="p-30 bg-gradient-to-b from-black via-transparent to-black h-full md:h-screen h-[760px] w-full relative flex flex-col items-center">
+      <div className="p-30 bg-gradient-to-b from-black via-transparent md:min-h-[760px] to-black md:h-screen h-[760px] w-full relative flex flex-col items-center">
         <img
           src="./images/book-background.jfif"
           alt="#"

@@ -32,12 +32,13 @@ const Therapist = () => {
               <li
                 onClick={() => setActiveItem(index)}
                 aria-current={activeItem == index}
-                className="cursor-pointer md:[&[aria-current='true']]:w-[48%] transition-all md:w-[25%]"
+                className="cursor-pointer  md:[&[aria-current='true']]:w-[48%] transition-all md:w-[25%]"
               >
                 <div className="relative w-full">
                   <img
                     src={therapist.img}
-                    className="md:grayscale transition-all md:hover:grayscale-0 border-b-2 md:border-b-0 border-slate-200 md:border-l-2 md:border-slate-200 object-cover md:h-[640px] h-[440px] w-full"
+                    aria-current={activeItem === index}
+                    className="md:[&[aria-current='false']]:grayscale transition-all md:[transition:width_var(--transition,200ms_ease-in)] md:hover:grayscale-0 border-b-2 md:border-b-0 border-slate-200 md:border-l-2 md:border-slate-200 object-cover md:h-[640px] h-[440px] w-full"
 
                   />
 
