@@ -1,8 +1,9 @@
-const Button = ({ children, clickHandler }) => {
+const Button = ({ children, clickHandler, ...restProps }) => {
   return (
     <button
+      {...restProps}
       type="button"
-      className=" px-3.5 py-2 rounded-xl bg-slate-50/20 text-gray-300 cursor-pointer hover:bg-slate-50/30"
+      className=" px-3.5 py-2 rounded-xl bg-slate-50/20 text-gray-200 cursor-pointer hover:bg-slate-50/30 text-md md:text-lg "
       onClick={clickHandler}
     >
       {children}
