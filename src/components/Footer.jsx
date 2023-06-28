@@ -11,7 +11,7 @@ const Footer = () => {
     mix-blend-overlay "
     >
       <img
-        src="/images/footer-bg.jpg"
+        src="./images/footer-bg.jpg"
         alt="#"
         height="1000px"
         className="w-full h-full object-cover absolute mix-blend-overlay"
@@ -72,7 +72,7 @@ const Footer = () => {
         </div>
         <div className="p-5 z-10 gap-1 flex flex-col items-center text-white">
         <img
-            src="/images/logo.JPG"
+            src="./images/logo.JPG"
             height="40px"
             width="40px"
             className="rounded-xl"
