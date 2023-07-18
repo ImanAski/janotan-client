@@ -5,6 +5,7 @@ import Blog from "../components/Blog";
 import Library from "../components/Library";
 import Footer from "../components/Footer";
 import Therapist from "../components/Therapist";
+import Container from "../components/Container";
 
 function Home() {
   return (
@@ -12,7 +13,8 @@ function Home() {
       <Header />
       <StaffCarousel />
       <Academy />
-      <Library />
+      {/* <Library /> */}
+      {/* <Container /> */}
       <Blog />
       <Therapist />
       <Footer />

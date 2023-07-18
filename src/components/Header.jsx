@@ -1,4 +1,4 @@
-import IconButton from "./IconButton";
+import IconButton from "./btn/IconButton";
 
 function Header() {
   return (
@@ -11,12 +11,7 @@ function Header() {
           className="absolute h-full w-full object-cover mix-blend-overlay"
         />
         <div className="flex flex-col items-center justify-center p-24">
-          <img
-            src="../../public/images/logo.png"
-            height="200px"
-            width="200px"
-            className="rounded-xl"
-          />
+          <img src="../../public/images/logo.png" className="w-80 rounded-xl" />
           <div className="justiry-center z-10 flex flex-row-reverse items-center gap-1 p-5">
             {/* TODO: Adding related Icons for header Icon buttons */}
             <IconButton>

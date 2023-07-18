@@ -1,8 +1,8 @@
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
-import Button from "../components/Button";
+import Button from "./btn/Button";
 
-import IconButton from "./IconButton";
+import IconButton from "./btn/IconButton";
 
 const Footer = () => {
   return (

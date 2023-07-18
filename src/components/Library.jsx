@@ -1,28 +1,28 @@
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
-import Button from "../components/Button";
+import Button from "./btn/Button";
 
 const Library = () => {
   return (
     <>
-      <div className="p-30 bg-gradient-to-b from-black via-transparent md:min-h-[760px] to-black md:h-screen h-[760px] w-full relative flex flex-col items-center">
+      <div className="p-30 relative flex h-[760px] w-full flex-col items-center bg-gradient-to-b from-black via-transparent to-black md:h-screen md:min-h-[760px]">
         <img
           src="./images/book-background.jfif"
           alt="#"
           height="1000px"
-          className="w-full h-full object-cover absolute mix-blend-overlay"
+          className="absolute h-full w-full object-cover mix-blend-overlay"
         />
-        <div className="py-24 flex-col flex items-center justify-center z-40 space-y-2.5">
-          <div className=" flex flex-col items-center justify-evenly  max-w-md  ">
-            <div className="w-full flex">
-              <div className="flex-1 self-center justify-end flex"></div>
-              <div className="flex m-5 items-center justify-center">
-                <div className="inline-block h-[80px] min-h-[1em] w-[2.5px]  bg-gray-400 opacity-100 self-center rounded-full"></div>
+        <div className="z-40 flex flex-col items-center justify-center space-y-2.5 py-24">
+          <div className=" flex max-w-md flex-col items-center  justify-evenly  ">
+            <div className="flex w-full">
+              <div className="flex flex-1 justify-end self-center"></div>
+              <div className="m-5 flex items-center justify-center">
+                <div className="inline-block h-[80px] min-h-[1em] w-[2.5px]  self-center rounded-full bg-gray-400 opacity-100"></div>
               </div>
-              <div className="flex-1 self-center justify-start"></div>
+              <div className="flex-1 justify-start self-center"></div>
             </div>
             <Typography
-              className=" font-semibold tracking-wide uppercase text-4xl  md:text-7xl text-white md:text-7xl "
+              className=" text-4xl font-semibold uppercase tracking-wide  text-white md:text-7xl md:text-7xl "
               variant="h1"
             >
               library
@@ -38,17 +38,17 @@ const Library = () => {
           </Divider> */}
           </div>
 
-          <div className="w-full flex">
-            <div className="flex-1 self-center justify-end flex">
+          <div className="flex w-full">
+            <div className="flex flex-1 justify-end self-center">
               <div className="flex flex-col justify-evenly space-y-2">
                 <Button>میکروبوک ها</Button>
                 <Button>رادیو جان و تن</Button>
               </div>
             </div>
-            <div className="flex m-5 items-center justify-center">
-              <div className="inline-block h-[120px] min-h-[1em] w-[2.5px]  bg-gray-400 opacity-100 self-center rounded-full"></div>
+            <div className="m-5 flex items-center justify-center">
+              <div className="inline-block h-[120px] min-h-[1em] w-[2.5px]  self-center rounded-full bg-gray-400 opacity-100"></div>
             </div>
-            <div className="flex-1 self-center justify-start flex">
+            <div className="flex flex-1 justify-start self-center">
               <div className="flex flex-col space-y-2">
                 <Button>تکست بوک ها</Button>
                 <Button>مجله جان و تن</Button>
