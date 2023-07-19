@@ -38,13 +38,19 @@ const Footer = () => {
             width="100px"
             className="rounded-xl"
           />
-          <p className="text-xs font-semibold  uppercase">janotancenter </p>
-          <p className="text-xs uppercase">psychoanalytic clinic</p>
-          <p className="py-5 ">
+          <p className="text-sm font-semibold uppercase md:text-base">
+            janotancenter
+          </p>
+          <p className=" text-smuppercase md:text-base">
+            psychoanalytic clinic
+          </p>
+          <p className="py-5 md:text-2xl ">
             اصفهان؛ خیابان شیخ صدوق شمالی؛ کوچه 56؛ ساختمان سینا
           </p>
-          <p className="text-xs font-semibold  uppercase">janotanCenter.ir </p>
-          <p className=" text-xs uppercase">all right reserved</p>
+          <p className=" text-sm font-semibold uppercase  md:text-base">
+            janotanCenter.ir
+          </p>
+          <p className=" text-sm  uppercase md:text-base">all right reserved</p>
         </div>
       </div>
     </div>

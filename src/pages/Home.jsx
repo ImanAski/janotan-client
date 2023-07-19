@@ -6,12 +6,13 @@ import Library from "../components/Library";
 import Footer from "../components/Footer";
 import Therapist from "../components/Therapist";
 import Container from "../components/Container";
+import Course from "../components/Course";
 
 function Home() {
   return (
     <>
       <Header />
-      <StaffCarousel />
+      <Course />
       <Academy />
       {/* <Library /> */}
       {/* <Container /> */}
