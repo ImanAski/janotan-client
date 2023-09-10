@@ -1,8 +1,8 @@
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
-import Button from "./btn/Button";
+import Button from "./ui/Button";
 
-import IconButton from "./btn/IconButton";
+import IconButton from "./ui/IconButton";
 
 const Footer = () => {
   return (
@@ -45,7 +45,7 @@ const Footer = () => {
             psychoanalytic clinic
           </p>
           <p className="py-5 md:text-2xl ">
-            اصفهان؛ خیابان شیخ صدوق شمالی؛ کوچه 56؛ ساختمان سینا
+            اصفهان ؛ خیابان شیخ‌صدوق شمالی ؛ کوچه 56 ؛ ساختمان سینا
           </p>
           <p className=" text-sm font-semibold uppercase  md:text-base">
             janotanCenter.ir

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "./App.css";
-import Home from "./pages/Home";
+import "./styles/App.css";
+import MainPage from "./pages/MainPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <>
       <BrowserRouter basename="/janotan-client/">
         <Routes>
-          <Route index element={<Home />} />
+          <Route index element={<MainPage />} />
         </Routes>
       </BrowserRouter>
     </>

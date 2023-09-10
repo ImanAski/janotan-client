@@ -1,4 +1,4 @@
-import IconButton from "./btn/IconButton";
+import IconButton from "../components/ui/IconButton";
 
 function Header() {
   return (
@@ -11,24 +11,27 @@ function Header() {
           className="absolute h-full w-full object-cover mix-blend-overlay"
         />
         <div className="flex flex-col items-center justify-center p-24">
-          <img src="../../public/images/logo.png" className="w-80 rounded-xl" />
-          <div className="justiry-center z-10 flex flex-row-reverse items-center gap-1 p-5">
+          <img
+            src="../../public/images/logo.png"
+            className=" w-96 rounded-xl"
+          />
+          <div className="justiry-center z-10 flex flex-row-reverse items-center gap-2 p-5">
             {/* TODO: Adding related Icons for header Icon buttons */}
             <IconButton>
-              <img className="w-8" src="../../public/icons/shopping.png" />
+              <img className=" w-10" src="../../public/icons/shopping.png" />
               <span className="absolute left-0 top-0.5 h-1.5 w-1.5 rounded-full bg-red-500"></span>
             </IconButton>
 
             <IconButton>
-              <img className="w-8" src="../../public/icons/profile.png" />
+              <img className=" w-10" src="../../public/icons/profile.png" />
             </IconButton>
 
             <IconButton>
-              <img className="w-8" src="../../public/icons/search.png" />
+              <img className=" w-10" src="../../public/icons/search.png" />
             </IconButton>
 
             <IconButton>
-              <img className="w-8" src="../../public/icons/menu.png" />
+              <img className=" w-10" src="../../public/icons/menu.png" />
             </IconButton>
           </div>
         </div>
