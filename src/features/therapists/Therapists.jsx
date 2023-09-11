@@ -1,7 +1,7 @@
 import { therapists } from "../../data/therapists";
 import { useState } from "react";
 
-const Therapist = () => {
+const Therapists = () => {
   const [activeItem, setActiveItem] = useState(0);
   return (
     <div
@@ -63,4 +63,4 @@ const Therapist = () => {
   );
 };
 
-export default Therapist;
+export default Therapists;

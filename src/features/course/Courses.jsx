@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "../App.css";
+import "../../styles/App.css";
 // import "swiper/css/navigation";
 import "swiper/css/virtual";
 
@@ -11,13 +11,13 @@ import "swiper/css/virtual";
 import { Virtual, Autoplay, Keyboard, Navigation } from "swiper/modules";
 
 //data
-import { courses } from "../assets/data/courses";
+import { courses } from "../../data/courses";
 
 //icons
-import nextArrow from "../../public/icons/rightArrow.svg";
-import prevArrow from "../../public/icons/leftArrow.svg";
+import nextArrow from "../../../public/icons/rightArrow.svg";
+import prevArrow from "../../../public/icons/leftArrow.svg";
 
-function Course() {
+function Courses() {
   return (
     <div className="relative flex h-full w-full items-center justify-center  bg-black p-10 px-24 pb-32 md:px-48 md:pb-44">
       <Swiper
@@ -83,4 +83,4 @@ function Course() {
   );
 }
 
-export default Course;
+export default Courses;
