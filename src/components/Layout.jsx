@@ -3,7 +3,7 @@ import Navigation from "./Navigation";
 
 function Layout() {
   return (
-    <div className=" bg-black px-28 py-10">
+    <div className="  bg-slate-700  ">
       <Navigation />
       <Outlet />
     </div>

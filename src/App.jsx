@@ -14,6 +14,7 @@ import SearchPage from "./pages/SearchPage";
 import RegisterPage from "./pages/RegisterPage";
 import LoginPage from "./pages/LoginPage";
 import PageNotFound from "./pages/PageNotFound";
+import Course from "./pages/Course";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -34,6 +35,7 @@ function App() {
               <Route index element={<Navigate replace to="mainpage" />} />
               <Route path="mainpage" element={<MainPage />} />
               <Route path="academy" element={<AcademyPage />} />
+              <Route path="courses/:courseId" element={<Course />} />
               <Route path="main-menu" element={<MainMenuPage />} />
               <Route path="payment" element={<PaymentPage />} />
               <Route path="user-profile" element={<UserProfilePage />} />

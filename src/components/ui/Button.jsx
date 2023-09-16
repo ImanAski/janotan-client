@@ -1,10 +1,12 @@
-const Button = ({ children, clickHandler, ...restProps }) => {
+const Button = ({ children, onClick, size, withIcon, ...restProps }) => {
   return (
     <button
       {...restProps}
       type="button"
-      className=" text-md mt-3 cursor-pointer truncate rounded-xl border-2 border-primaryColor bg-btn_bg/50 px-5  py-1.5 text-white hover:bg-btn_bg/75  md:text-3xl "
-      onClick={clickHandler}
+      className={` ${size ? size : ""} 
+      ${withIcon && "flex items-center gap-7 "}
+       cursor-pointer truncate   py-1.5  text-white/75       `}
+      onClick={onClick}
     >
       {children}
     </button>

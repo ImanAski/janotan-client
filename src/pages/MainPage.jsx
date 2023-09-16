@@ -9,14 +9,14 @@ import Therapists from "../features/therapists/Therapists";
 function MainPage() {
   return (
     <>
-      <BgImageContainer>
+      <BgImageContainer type="mainpage-course">
         <NewCourse />
         <Courses />
       </BgImageContainer>
 
       <Sections type="academy" />
 
-      <BgImageContainer>
+      <BgImageContainer type="mainpage-main">
         <NewMicroBook />
         <Sections type="library" />
       </BgImageContainer>

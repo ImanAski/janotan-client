@@ -10,16 +10,19 @@ import "swiper/css/virtual";
 // import required modules
 import { Virtual, Autoplay, Keyboard, Navigation } from "swiper/modules";
 
-//data
-import { courses } from "../../data/courses";
-
 //icons
 import nextArrow from "../../../public/icons/rightArrow.svg";
 import prevArrow from "../../../public/icons/leftArrow.svg";
+import { useCourses } from "./useCourses";
+import { useNavigate } from "react-router-dom";
 
 function Courses() {
+  const { isLoading, fakeCoursesData: courses } = useCourses();
+
+  const navigate = useNavigate();
+
   return (
-    <div className="relative flex h-full w-full items-center justify-center  bg-black p-10 px-24 pb-32 md:px-48 md:pb-44">
+    <div className="relative flex items-center justify-between  px-10  pb-28 ">
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
@@ -51,14 +54,15 @@ function Courses() {
           },
         }}
         modules={[Virtual, Autoplay, Keyboard, Navigation]}
-        className="mySwiper"
+        className="mySwiper mx-4"
         virtual={true}
       >
         {courses.map((course, index) => (
           <SwiperSlide
             key={course.name}
             virtualIndex={index}
-            className=" h-96  w-full overflow-hidden rounded-xl "
+            className=" h-96  overflow-hidden rounded-xl "
+            onClick={() => navigate(`/courses/${course.id}`)}
           >
             <div className=" relative  h-full w-full cursor-pointer bg-gradient-to-b from-transparent via-transparent to-gray-800">
               <img
@@ -73,11 +77,11 @@ function Courses() {
           </SwiperSlide>
         ))}
       </Swiper>
-      <button className=" arrow-left arrow left-5 h-16 w-16 md:left-8 md:top-[30%] md:h-28 md:w-28">
-        <img className=" w-full " src={prevArrow} />
+      <button className=" arrow-left arrow w-[35%] max-w-[80px] p-6  ">
+        <img src={prevArrow} />
       </button>
-      <button className=" arrow-right arrow right-5 h-16 w-16 md:right-8  md:top-[30%] md:h-28 md:w-28">
-        <img className=" w-full" src={nextArrow} />
+      <button className="arrow-right arrow w-[35%] max-w-[80px] p-6   ">
+        <img src={nextArrow} />
       </button>
     </div>
   );

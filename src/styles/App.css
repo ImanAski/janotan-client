@@ -17,7 +17,6 @@
 }
 
 .arrow {
-  position: absolute;
   margin-top: -5px;
   z-index: 10;
   display: flex;
@@ -25,15 +24,21 @@
   align-items: center;
 }
 
-.arrow img {
+/* .arrow img {
   width: 30%;
-}
+} */
 
 .arrow.arrow-left {
   border-radius: 50%;
   border: 1px solid rgb(238, 238, 238, 0.4);
+  order: 3;
 }
 .arrow.arrow-right {
   border-radius: 50%;
   border: 1px solid rgb(238, 238, 238, 0.4);
+  order: 1;
+}
+
+.mySwiper {
+  order: 2;
 }
