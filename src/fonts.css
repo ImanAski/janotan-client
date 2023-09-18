@@ -1,8 +1,0 @@
-@font-face {
-    font-family: 'mitra';
-    src: local('mitra'), url(./fonts/mitra.ttf) format('ttf');
-}
-
-body {
-    font-family: mitra;
-}
