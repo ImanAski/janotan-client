@@ -5,7 +5,6 @@ import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import "./styles/App.css";
 
 import Layout from "./components/Layout";
-import MainPage from "./pages/MainPage";
 import AcademyPage from "./pages/AcademyPage";
 import MainMenuPage from "./pages/MainMenuPage";
 import PaymentPage from "./pages/PaymentPage";
@@ -14,7 +13,11 @@ import SearchPage from "./pages/SearchPage";
 import RegisterPage from "./pages/RegisterPage";
 import LoginPage from "./pages/LoginPage";
 import PageNotFound from "./pages/PageNotFound";
-import Course from "./pages/Course";
+import CoursesPage from "./pages/CoursesPage";
+import MicroBooksPage from "./pages/MicroBooksPage";
+import HomePage from "./pages/HomePage";
+import BlogsPage from "./pages/BlogsPage";
+import CounselingPage from "./pages/CounselingPage";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -32,14 +35,19 @@ function App() {
         <BrowserRouter basename="/janotan-client/">
           <Routes>
             <Route element={<Layout />}>
-              <Route index element={<Navigate replace to="mainpage" />} />
-              <Route path="mainpage" element={<MainPage />} />
+              <Route index element={<Navigate replace to="home" />} />
+              <Route path="home" element={<HomePage />} />
               <Route path="academy" element={<AcademyPage />} />
-              <Route path="courses/:courseId" element={<Course />} />
+              <Route path="courses/:courseId" element={<CoursesPage />} />
+              <Route path="microbooks" element={<MicroBooksPage />} />
+              <Route path="blogs" element={<BlogsPage />} />
+              <Route path="counseling" element={<CounselingPage />} />
+
               <Route path="main-menu" element={<MainMenuPage />} />
               <Route path="payment" element={<PaymentPage />} />
               <Route path="user-profile" element={<UserProfilePage />} />
               <Route path="search" element={<SearchPage />} />
+
               <Route path="register" element={<RegisterPage />} />
               <Route path="login" element={<LoginPage />} />
             </Route>
@@ -48,11 +56,6 @@ function App() {
           </Routes>
         </BrowserRouter>
       </QueryClientProvider>
-      {/* <BrowserRouter basename="/janotan-client/">
-        <Routes>
-          <Route index element={<MainPage />} />
-        </Routes>
-      </BrowserRouter> */}
     </>
   );
 }

@@ -1,18 +1,23 @@
 import { useGetLatestCourse } from "../features/course/useGetLatestCourse";
-import Spinner from "./Spinner";
+import { useLibraryBg } from "../features/library/useLibraryBg";
 
 function BgImageContainer({ children, type, height }) {
-  const { isCourseLoading, latestCourse } = useGetLatestCourse();
-
-  if (type === "mainpage-course" && isCourseLoading) return <Spinner />;
+  const { latestCourse } = useGetLatestCourse();
+  const { libraryBg } = useLibraryBg();
 
   return (
     <div
       className={`${
         height ? height : "h-full"
-      } bg-cover bg-center bg-no-repeat`}
+      } bg-cover  bg-center bg-no-repeat ${
+        type === "homepage-library" ? " pt-80" : ""
+      } `}
       style={{
-        backgroundImage: `linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%), url(${latestCourse.bgImage})`,
+        backgroundImage: `${
+          type === "homepage-course"
+            ? `linear-gradient(0deg, rgba(21,21,21,1) 0%, rgba(0,0,0,0) 30%), url(${latestCourse.bgImage}`
+            : `linear-gradient(0deg, rgba(21,21,21,1) 0%, rgba(0,0,0,0) 86%, rgba(21,21,21,1) 100%), url(${libraryBg}`
+        })`,
       }}
     >
       {children}
