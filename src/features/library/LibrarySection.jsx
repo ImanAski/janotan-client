@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import libraryTitle from "../../../public/images/libraryTitle.png";
+import libraryTitle from "../../../public/images/library/libraryTitle.png";
 import Button from "../../components/ui/Button";
 
 function LibrarySection() {

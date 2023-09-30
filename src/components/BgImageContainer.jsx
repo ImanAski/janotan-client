@@ -16,7 +16,7 @@ function BgImageContainer({ children, type, height }) {
         backgroundImage: `${
           type === "homepage-course"
             ? `linear-gradient(0deg, rgba(21,21,21,1) 0%, rgba(0,0,0,0) 30%), url(${latestCourse.bgImage}`
-            : `linear-gradient(0deg, rgba(21,21,21,1) 0%, rgba(0,0,0,0) 86%, rgba(21,21,21,1) 100%), url(${libraryBg}`
+            : `linear-gradient(0deg, rgba(21,21,21,1) 0%, rgba(0,0,0,0) 10%, rgba(4,4,4,0) 86%, rgba(21,21,21,1) 100%), url(${libraryBg}`
         })`,
       }}
     >

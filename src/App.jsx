@@ -18,6 +18,7 @@ import MicroBooksPage from "./pages/MicroBooksPage";
 import HomePage from "./pages/HomePage";
 import BlogsPage from "./pages/BlogsPage";
 import CounselingPage from "./pages/CounselingPage";
+import PodcastPage from "./pages/PodcastPage";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -37,11 +38,12 @@ function App() {
             <Route element={<Layout />}>
               <Route index element={<Navigate replace to="home" />} />
               <Route path="home" element={<HomePage />} />
-              <Route path="academy" element={<AcademyPage />} />
+              <Route path="academy/:academyBook" element={<AcademyPage />} />
               <Route path="courses/:courseId" element={<CoursesPage />} />
               <Route path="microbooks" element={<MicroBooksPage />} />
               <Route path="blogs" element={<BlogsPage />} />
               <Route path="counseling" element={<CounselingPage />} />
+              <Route path="podcast" element={<PodcastPage />} />
 
               <Route path="main-menu" element={<MainMenuPage />} />
               <Route path="payment" element={<PaymentPage />} />

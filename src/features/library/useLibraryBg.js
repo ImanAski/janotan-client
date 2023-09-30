@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { getLibraryBg } from "../../services/apiLibraryBg";
 
-import libraryBg from "../../../public/images/fakeLibraryBg.jpg";
+import libraryBg from "../../../public/images/library/fakeLibraryBg.jpg";
 
 export function useLibraryBg() {
   // const {

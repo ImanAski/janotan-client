@@ -4,6 +4,7 @@ import AcademySection from "../features/academy/AcademySection";
 import Courses from "../features/course/Courses";
 import NewCourse from "../features/course/NewCourse";
 import LibrarySection from "../features/library/LibrarySection";
+import PodcastSection from "../features/podcast/PodcastSection";
 import Therapists from "../features/therapists/Therapists";
 
 function HomePage() {
@@ -14,14 +15,16 @@ function HomePage() {
         <Courses />
       </BgImageContainer>
 
-      <BgImageContainer type="homepage-library" height="h-[150vh]">
+      <BgImageContainer type="homepage-library">
         <LibrarySection />
         <AcademySection />
       </BgImageContainer>
 
-      {/* <Therapists /> */}
+      <PodcastSection />
 
-      <Footer />
+      <Therapists />
+
+      {/* <Footer /> */}
     </div>
   );
 }
