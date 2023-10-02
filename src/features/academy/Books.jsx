@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "../../styles/App.css";
-// import "swiper/css/navigation";
 import "swiper/css/virtual";
 
 // import required modules
@@ -17,12 +16,12 @@ import prevArrow from "../../../public/icons/leftArrow.svg";
 import { useAcademyBooks } from "../academy/useAcademyBooks";
 import { useNavigate } from "react-router-dom";
 
+import discountIcon from "../../../public/icons/discount-icon.png";
+
 function Courses() {
-  const { isLoading, fakeAcademyBooks: academyBooks } = useAcademyBooks();
+  const { fakeAcademyBooks: academyBooks } = useAcademyBooks();
 
   const navigate = useNavigate();
-
-  // TODO: books responsive isn't working
 
   return (
     <div className=" flex w-full items-center justify-between  px-10  ">
@@ -67,24 +66,31 @@ function Courses() {
             className="  max-w-[295px] overflow-hidden "
             onClick={() => navigate(`/academy/${academyBook.id}`)}
           >
-            <div className=" relative  cursor-pointer">
+            <div className=" relative  flex cursor-pointer items-center justify-center pb-6">
               <img
                 src={academyBook.sliderImage}
                 alt={academyBook.name}
                 className="   block h-full w-full overflow-hidden object-cover "
               />
-              <div className="absolute bottom-16 flex w-full flex-col items-center justify-center gap-2   text-center text-2xl text-white md:text-3xl">
+              <div className="absolute bottom-20 flex w-full flex-col items-center justify-center gap-2   text-center text-2xl text-white md:text-3xl">
                 <p>{academyBook.name}</p>
                 <p className=" text-2xl">{academyBook.price}</p>
               </div>
+
+              {academyBook.discount && (
+                <img
+                  className="   absolute bottom-0  z-10   w-14  "
+                  src={discountIcon}
+                />
+              )}
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-      <button className=" arrow-left arrow w-[20%] max-w-[80px] p-5 lg:w-[35%] lg:p-6  ">
+      <button className=" arrow-left arrow w-[30%] max-w-[80px] p-5 lg:w-[35%] lg:p-6  ">
         <img src={prevArrow} />
       </button>
-      <button className="arrow-right arrow w-[20%] max-w-[80px] p-5 lg:w-[35%] lg:p-6    ">
+      <button className="arrow-right arrow w-[30%] max-w-[80px] p-5 lg:w-[35%] lg:p-6    ">
         <img src={nextArrow} />
       </button>
     </div>

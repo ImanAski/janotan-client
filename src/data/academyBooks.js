@@ -6,6 +6,7 @@ export const academyBooks = [
     description: "...",
     price: "200/000 تومان",
     id: "1",
+    discount: false,
   },
   {
     sliderImage: "../../public/images/academy/asib2.png",
@@ -14,6 +15,7 @@ export const academyBooks = [
     description: "...",
     price: "250/000 تومان",
     id: "2",
+    discount: true,
   },
   {
     sliderImage: "../../public/images/academy/asib3.png",
@@ -22,6 +24,7 @@ export const academyBooks = [
     description: "...",
     price: "180/000 تومان",
     id: "3",
+    discount: true,
   },
   {
     sliderImage: "../../public/images/academy/asib4.png",
@@ -30,5 +33,6 @@ export const academyBooks = [
     description: "...",
     price: "300/000 تومان",
     id: "4",
+    discount: false,
   },
 ];

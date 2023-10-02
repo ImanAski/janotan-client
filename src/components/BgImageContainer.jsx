@@ -10,7 +10,7 @@ function BgImageContainer({ children, type, height }) {
       className={`${
         height ? height : "h-full"
       } bg-cover  bg-center bg-no-repeat ${
-        type === "homepage-library" ? " pt-80" : ""
+        type === "homepage-library" ? " pt-40 md:pt-80" : ""
       } `}
       style={{
         backgroundImage: `${
