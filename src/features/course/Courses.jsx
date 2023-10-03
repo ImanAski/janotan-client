@@ -20,7 +20,7 @@ function Courses() {
   const navigate = useNavigate();
 
   return (
-    <div className=" flex items-center justify-center pb-32">
+    <div className="  pb-32">
       <Swiper
         slidesPerView={1}
         spaceBetween={10}

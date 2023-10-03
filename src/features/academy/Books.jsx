@@ -24,7 +24,7 @@ function Courses() {
   const navigate = useNavigate();
 
   return (
-    <div className=" flex w-full items-center justify-between  px-10  ">
+    <div className=" relative  w-full  px-10  ">
       <Swiper
         slidesPerView={1}
         spaceBetween={0}
@@ -56,7 +56,7 @@ function Courses() {
           },
         }}
         modules={[Virtual, Autoplay, Keyboard, Navigation]}
-        className="mySwiper mx-4  h-full max-w-[1240px]"
+        className="mySwiper mx-24   h-full max-w-[1240px] "
         virtual={true}
       >
         {academyBooks.map((academyBook, index) => (
@@ -87,10 +87,10 @@ function Courses() {
           </SwiperSlide>
         ))}
       </Swiper>
-      <button className=" arrow-left arrow w-[30%] max-w-[80px] p-5 lg:w-[35%] lg:p-6  ">
+      <button className=" arrow-left  arrow absolute bottom-48 left-10 w-[15%] max-w-[80px] p-5 lg:w-[35%] lg:p-6  ">
         <img src={prevArrow} />
       </button>
-      <button className="arrow-right arrow w-[30%] max-w-[80px] p-5 lg:w-[35%] lg:p-6    ">
+      <button className=" arrow-right arrow absolute  bottom-48 right-10  w-[15%] max-w-[80px] p-5 lg:w-[35%] lg:p-6    ">
         <img src={nextArrow} />
       </button>
     </div>
