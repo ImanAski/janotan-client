@@ -11,18 +11,16 @@ import "swiper/css/virtual";
 import { Virtual, Autoplay, Keyboard, Navigation } from "swiper/modules";
 
 //icons
-import nextArrow from "../../../public/icons/rightArrow.svg";
-import prevArrow from "../../../public/icons/leftArrow.svg";
 import { useCourses } from "./useCourses";
 import { useNavigate } from "react-router-dom";
 
 function Courses() {
-  const { isLoading, fakeCoursesData: courses } = useCourses();
+  const { fakeCoursesData: courses } = useCourses();
 
   const navigate = useNavigate();
 
   return (
-    <div className="relative flex items-center justify-between  px-10  pb-28 ">
+    <div className=" flex items-center justify-center pb-32">
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
@@ -35,10 +33,6 @@ function Courses() {
           disableOnInteraction: false,
         }}
         loop={true}
-        navigation={{
-          nextEl: ".arrow-left",
-          prevEl: ".arrow-right",
-        }}
         breakpoints={{
           640: {
             slidesPerView: 2,
@@ -54,35 +48,24 @@ function Courses() {
           },
         }}
         modules={[Virtual, Autoplay, Keyboard, Navigation]}
-        className="mySwiper mx-4"
+        className="mySwiper mx-24 max-w-[1240px] "
         virtual={true}
       >
         {courses.map((course, index) => (
           <SwiperSlide
             key={course.name}
             virtualIndex={index}
-            className=" h-96  overflow-hidden rounded-xl "
+            className=" h-[400px]  overflow-hidden rounded-2xl "
             onClick={() => navigate(`/courses/${course.id}`)}
           >
-            <div className=" relative  h-full w-full cursor-pointer bg-gradient-to-b from-transparent via-transparent to-gray-800">
-              <img
-                src={course.img}
-                alt={course.name}
-                className=" h-full w-full object-cover mix-blend-overlay "
-              />
-              <p className=" absolute  bottom-10 w-full text-center text-xl text-white md:text-3xl">
-                {course.name}
-              </p>
-            </div>
+            <img
+              src={course.bgImage}
+              alt={course.name}
+              className=" h-full w-full cursor-pointer overflow-hidden object-cover "
+            />
           </SwiperSlide>
         ))}
       </Swiper>
-      <button className=" arrow-left arrow w-[35%] max-w-[80px] p-6  ">
-        <img src={prevArrow} />
-      </button>
-      <button className="arrow-right arrow w-[35%] max-w-[80px] p-6   ">
-        <img src={nextArrow} />
-      </button>
     </div>
   );
 }

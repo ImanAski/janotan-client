@@ -12,7 +12,7 @@ export function useCourses() {
   //   queryFn: getCourses,
   // });
 
-  // return { isLoading, fakeCoursesData, error };
+  // return { isLoading, courses, error };
   const isLoading = false;
   return { isLoading, fakeCoursesData };
 }

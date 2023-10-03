@@ -1,18 +1,18 @@
 export const therapists = [
-    {
-        img: "./images/therapist-5.jpg",
-        name: "امیر مسعود ضرابی",
-    },
-    {
-        img: "./images/therapist-6.jpg",
-        name: "امیر مسعود ضرابی",
-    },
-    {
-        img: "./images/therapist-3.jpg",
-        name: "امیر مسعود ضرابی",
-    },
-    {
-        img: "./images/therapist-4.jpg",
-        name: "امیر مسعود ضرابی",
-    }
-]
+  {
+    image: "../../public/images/therapists/therapists1.png",
+    name: "امیر مسعود ضرابی",
+  },
+  {
+    image: "../../public/images/therapists/therapists2.png",
+    name: "امیر مسعود ضرابی",
+  },
+  {
+    image: "../../public/images/therapists/therapists3.png",
+    name: "امیر مسعود ضرابی",
+  },
+  {
+    image: "../../public/images/therapists/therapists4.png",
+    name: "امیر مسعود ضرابی",
+  },
+];

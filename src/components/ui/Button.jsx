@@ -1,11 +1,10 @@
-const Button = ({ children, onClick, size, withIcon, ...restProps }) => {
+const Button = ({ children, onClick, size, ...restProps }) => {
   return (
     <button
       {...restProps}
       type="button"
       className={` ${size ? size : ""} 
-      ${withIcon && "flex items-center gap-7 "}
-       cursor-pointer truncate   py-1.5  text-white/75       `}
+       my-3 w-64 cursor-pointer truncate  rounded-[10px] bg-white/10 py-1.5 text-3xl  text-white md:text-4xl      `}
       onClick={onClick}
     >
       {children}
