@@ -3,6 +3,8 @@ import { useGetLatestCourse } from "./useGetLatestCourse";
 import { BsFillArrowRightSquareFill } from "react-icons/bs";
 import TextBtn from "../../components/ui/TextBtn";
 
+import nextIcon from "../../../public/icons/next-icon.png";
+
 function NewCourse() {
   const { isCourseLoading, latestCourse } = useGetLatestCourse();
 
@@ -22,7 +24,7 @@ function NewCourse() {
               withIcon={true}
               onClick={() => navigate(`/courses/${latestCourse.id}`)}
             >
-              <BsFillArrowRightSquareFill className="mt-1 w-6 text-white lg:mr-16 lg:w-8" />
+              <img src={nextIcon} className=" mt-1 w-6  text-white lg:w-10" />
               <p className=" mr-1 border-b border-transparent   hover:border-slate-200 md:text-[28.5px] lg:text-[43px] ">
                 برای رزرو و ثبت این دوره کلیک کنید
               </p>

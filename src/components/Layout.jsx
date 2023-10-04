@@ -4,6 +4,7 @@ import Spinner from "./Spinner";
 import { useCourses } from "../features/course/useCourses";
 import { useAcademyBooks } from "../features/academy/useAcademyBooks";
 import { useTherapists } from "../features/therapists/useTherapists";
+import ScrollTopIcon from "../components/ui/ScrollButton";
 
 function Layout() {
   const { isLoading: isCourseLoading } = useCourses();
@@ -17,6 +18,7 @@ function Layout() {
       {isTherapistsLoading && <Spinner />}
       <Navigation />
       <Outlet />
+      <ScrollTopIcon />
     </div>
   );
 }

@@ -24,7 +24,7 @@ function Courses() {
   const navigate = useNavigate();
 
   return (
-    <div className=" relative  w-full  px-10  ">
+    <div className=" relative  w-full px-3  md:px-10  ">
       <Swiper
         slidesPerView={1}
         spaceBetween={0}
@@ -63,7 +63,7 @@ function Courses() {
           <SwiperSlide
             key={academyBook.name}
             virtualIndex={index}
-            className="  max-w-[295px] overflow-hidden "
+            className="   max-w-[295px] overflow-hidden "
             onClick={() => navigate(`/academy/${academyBook.id}`)}
           >
             <div className=" relative  flex cursor-pointer items-center justify-center pb-6">
