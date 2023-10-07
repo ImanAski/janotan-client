@@ -1,8 +1,10 @@
+import BlurBackground from "./ui/BlurBackground";
+
 function Spinner() {
   return (
-    <div className=" fixed z-50  flex h-full w-full items-center justify-center   bg-[#151515]/60 backdrop-blur-sm">
+    <BlurBackground>
       <img src="../../public/spinner/spinner.svg" />
-    </div>
+    </BlurBackground>
   );
 }
 

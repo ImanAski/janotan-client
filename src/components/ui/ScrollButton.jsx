@@ -24,7 +24,7 @@ const ScrollButton = () => {
 
   return (
     <img
-      className=" fixed  bottom-0 z-20 m-4 w-20 cursor-pointer  transition-all duration-500"
+      className=" fixed  bottom-0 z-20 m-4 w-14 cursor-pointer transition-all  duration-500 md:w-20"
       src={ScrollTopIcon}
       onClick={scrollToTop}
       style={{

@@ -19,7 +19,7 @@ import { useNavigate } from "react-router-dom";
 import discountIcon from "../../../public/icons/discount-icon.png";
 
 function Courses() {
-  const { fakeAcademyBooks: academyBooks } = useAcademyBooks();
+  const { academyBooks } = useAcademyBooks();
 
   const navigate = useNavigate();
 
@@ -68,7 +68,7 @@ function Courses() {
           >
             <div className=" relative  flex cursor-pointer items-center justify-center pb-6">
               <img
-                src={academyBook.sliderImage}
+                src={academyBook.image}
                 alt={academyBook.name}
                 className="   block h-full w-full overflow-hidden object-cover "
               />
@@ -87,10 +87,16 @@ function Courses() {
           </SwiperSlide>
         ))}
       </Swiper>
-      <button className=" arrow-left  arrow absolute bottom-48 left-10 w-[15%] max-w-[80px] p-5 lg:w-[35%] lg:p-6  ">
+      <button
+        className=" arrow-left  arrow absolute  left-10 top-1/2 w-[15%] max-w-[80px] p-5 lg:w-[35%] lg:p-6  "
+        style={{ transform: " translate(0, -50%)" }}
+      >
         <img src={prevArrow} />
       </button>
-      <button className=" arrow-right arrow absolute  bottom-48 right-10  w-[15%] max-w-[80px] p-5 lg:w-[35%] lg:p-6    ">
+      <button
+        className=" arrow-right arrow absolute   right-10 top-1/2  w-[15%] max-w-[80px] p-5 lg:w-[35%] lg:p-6    "
+        style={{ transform: " translate(0, -50%)" }}
+      >
         <img src={nextArrow} />
       </button>
     </div>

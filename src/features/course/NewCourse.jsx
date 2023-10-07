@@ -6,7 +6,7 @@ import TextBtn from "../../components/ui/TextBtn";
 import nextIcon from "../../../public/icons/next-icon.png";
 
 function NewCourse() {
-  const { isCourseLoading, latestCourse } = useGetLatestCourse();
+  const { latestCourse } = useGetLatestCourse();
 
   const navigate = useNavigate();
 
@@ -37,7 +37,7 @@ function NewCourse() {
       /> */}
         <img
           className="objecst-cover order-1 h-[180px]  w-[180px] min-w-[100px] max-w-[400px]   sm:order-2 md:h-[300px] md:w-[300px] lg:h-auto lg:w-auto"
-          src={latestCourse.titleImage}
+          src={latestCourse.title_image}
         />
       </div>
     </div>

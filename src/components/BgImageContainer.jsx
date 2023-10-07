@@ -4,6 +4,7 @@ import { useLibraryBg } from "../features/library/useLibraryBg";
 function BgImageContainer({ children, type, height }) {
   const { latestCourse } = useGetLatestCourse();
   const { libraryBg } = useLibraryBg();
+  console.log(latestCourse);
 
   return (
     <div
@@ -15,8 +16,8 @@ function BgImageContainer({ children, type, height }) {
       style={{
         backgroundImage: `${
           type === "homepage-course"
-            ? `linear-gradient(0deg, rgba(21,21,21,1) 0%, rgba(0,0,0,0) 30%), url(${latestCourse.bgImage}`
-            : `linear-gradient(0deg, rgba(21,21,21,1) 0%, rgba(0,0,0,0) 10%, rgba(4,4,4,0) 86%, rgba(21,21,21,1) 100%), url(${libraryBg}`
+            ? `linear-gradient(0deg, rgba(21,21,21,1) 0%, rgba(0,0,0,0) 30%), url(${latestCourse.image}`
+            : `linear-gradient(0deg, rgba(21,21,21,1) 0%, rgba(0,0,0,0) 10%, rgba(4,4,4,0) 86%, rgba(21,21,21,1) 100%), url(${libraryBg.background}`
         })`,
       }}
     >
