@@ -1,13 +1,14 @@
 import axios from "axios";
+import { BASE_URL } from "../utils/constants";
 
 export async function getAcademyBooks() {
-  const { data } = await axios.get("http://62.60.131.191/api/handouts");
+  const { data } = await axios.get(`${BASE_URL}api/handouts`);
   return data;
 }
 
 export async function getAcademyBook(id) {
   const { data } = await axios
-    .get(`http://62.60.131.191/api/handouts/${id}`)
+    .get(`${BASE_URL}api/handouts/${id}`)
     .catch(function (error) {
       if (error.response) {
         console.log(error.response.data);

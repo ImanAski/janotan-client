@@ -1,8 +1,9 @@
 import axios from "axios";
+import { BASE_URL } from "../utils/constants";
 
 export async function getTherapists() {
   const { data } = await axios
-    .get(`http://62.60.131.191/api/therapists`)
+    .get(`${BASE_URL}api/therapists`)
     .catch(function (error) {
       if (error.response) {
         console.log(error.response.data);
@@ -20,7 +21,7 @@ export async function getTherapists() {
 
 export async function getTherapist(id) {
   const { data } = await axios
-    .get(`http://62.60.131.191/api/therapists/${id}`)
+    .get(`${BASE_URL}therapists/${id}`)
     .catch(function (error) {
       if (error.response) {
         console.log(error.response.data);
