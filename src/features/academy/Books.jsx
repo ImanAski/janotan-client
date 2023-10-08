@@ -19,12 +19,12 @@ import { useNavigate } from "react-router-dom";
 import discountIcon from "../../../public/icons/discount-icon.png";
 
 function Courses() {
-  const { fakeAcademyBooks: academyBooks } = useAcademyBooks();
+  const { academyBooks } = useAcademyBooks();
 
   const navigate = useNavigate();
 
   return (
-    <div className=" flex w-full items-center justify-between  px-10  ">
+    <div className=" relative  w-full px-3  md:px-10  ">
       <Swiper
         slidesPerView={1}
         spaceBetween={0}
@@ -56,19 +56,19 @@ function Courses() {
           },
         }}
         modules={[Virtual, Autoplay, Keyboard, Navigation]}
-        className="mySwiper mx-4  h-full max-w-[1240px]"
+        className="mySwiper mx-24   h-full max-w-[1240px] "
         virtual={true}
       >
         {academyBooks.map((academyBook, index) => (
           <SwiperSlide
             key={academyBook.name}
             virtualIndex={index}
-            className="  max-w-[295px] overflow-hidden "
+            className="   max-w-[295px] overflow-hidden "
             onClick={() => navigate(`/academy/${academyBook.id}`)}
           >
             <div className=" relative  flex cursor-pointer items-center justify-center pb-6">
               <img
-                src={academyBook.sliderImage}
+                src={academyBook.image}
                 alt={academyBook.name}
                 className="   block h-full w-full overflow-hidden object-cover "
               />
@@ -87,10 +87,16 @@ function Courses() {
           </SwiperSlide>
         ))}
       </Swiper>
-      <button className=" arrow-left arrow w-[30%] max-w-[80px] p-5 lg:w-[35%] lg:p-6  ">
+      <button
+        className=" arrow-left  arrow absolute  left-10 top-1/2 w-[15%] max-w-[80px] p-5 lg:w-[35%] lg:p-6  "
+        style={{ transform: " translate(0, -50%)" }}
+      >
         <img src={prevArrow} />
       </button>
-      <button className="arrow-right arrow w-[30%] max-w-[80px] p-5 lg:w-[35%] lg:p-6    ">
+      <button
+        className=" arrow-right arrow absolute   right-10 top-1/2  w-[15%] max-w-[80px] p-5 lg:w-[35%] lg:p-6    "
+        style={{ transform: " translate(0, -50%)" }}
+      >
         <img src={nextArrow} />
       </button>
     </div>

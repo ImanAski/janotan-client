@@ -1,7 +1,7 @@
 export const courses = [
   {
-    bgImage: "../../public/images/coueseSection/latestcourseBgImage.jpg",
-    titleImage: "../../public/images/coueseSection/latestCourseTitleImage.png",
+    image: "../../public/images/coueseSection/latestcourseBgImage.jpg",
+    title_image: "../../public/images/coueseSection/latestCourseTitleImage.png",
     name: "دوره کتابخوانی عمومی توهم نبوغ",
     latest: "true",
     description: "...",

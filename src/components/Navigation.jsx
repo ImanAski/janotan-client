@@ -16,7 +16,11 @@ function Navigation() {
       </IconButton>
 
       <IconButton>
-        <img className=" w-6" src="../../public/icons/search.png" />
+        <img
+          onClick={() => navigate("/search")}
+          className=" w-6"
+          src="../../public/icons/search.png"
+        />
       </IconButton>
 
       <IconButton>

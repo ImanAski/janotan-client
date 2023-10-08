@@ -4,16 +4,16 @@ import { getTherapists } from "../../services/apiTherapists";
 import { therapists as fakeTherapists } from "../../data/therapists";
 
 export function useTherapists() {
-  // const {
-  //   isLoading,
-  //   data: therapists,
-  //   error,
-  // } = useQuery({
-  //   queryKey: ["therapists"],
-  //   queryFn: getAcademyBooks,
-  // });
+  const {
+    isLoading,
+    data: therapists,
+    error,
+  } = useQuery({
+    queryKey: ["therapists"],
+    queryFn: getTherapists,
+  });
 
-  // return { isLoading, therapists, error };
-  const isLoading = false;
-  return { isLoading, fakeTherapists };
+  return { isLoading, therapists, error };
+  // const isLoading = false;
+  // return { isLoading, fakeTherapists };
 }

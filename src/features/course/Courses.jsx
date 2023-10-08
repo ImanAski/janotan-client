@@ -15,12 +15,13 @@ import { useCourses } from "./useCourses";
 import { useNavigate } from "react-router-dom";
 
 function Courses() {
-  const { fakeCoursesData: courses } = useCourses();
+  const { courses } = useCourses();
+  console.log(`courses in CoursesCompo : ${courses}`);
 
   const navigate = useNavigate();
 
   return (
-    <div className=" flex items-center justify-center pb-32">
+    <div className="  pb-32">
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
@@ -51,20 +52,21 @@ function Courses() {
         className="mySwiper mx-24 max-w-[1240px] "
         virtual={true}
       >
-        {courses.map((course, index) => (
-          <SwiperSlide
-            key={course.name}
-            virtualIndex={index}
-            className=" h-[400px]  overflow-hidden rounded-2xl "
-            onClick={() => navigate(`/courses/${course.id}`)}
-          >
-            <img
-              src={course.bgImage}
-              alt={course.name}
-              className=" h-full w-full cursor-pointer overflow-hidden object-cover "
-            />
-          </SwiperSlide>
-        ))}
+        {courses &&
+          courses.map((course, index) => (
+            <SwiperSlide
+              key={course.name}
+              virtualIndex={index}
+              className=" h-[400px]  overflow-hidden rounded-2xl "
+              onClick={() => navigate(`/courses/${course.id}`)}
+            >
+              <img
+                src={course.bgImage}
+                alt={course.name}
+                className=" h-full w-full cursor-pointer overflow-hidden object-cover "
+              />
+            </SwiperSlide>
+          ))}
       </Swiper>
     </div>
   );

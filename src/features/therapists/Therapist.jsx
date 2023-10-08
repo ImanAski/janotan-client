@@ -6,7 +6,7 @@ function Therapist({ therapistData }) {
 
   return (
     <div
-      onClick={() => navigate(`therapists/${therapistData.name}`)}
+      onClick={() => navigate(`/therapists/${therapistData.id}`)}
       className=" relative mt-16 flex h-full  w-[45%] min-w-[150px] max-w-[260px]  cursor-pointer items-center justify-center rounded-3xl bg-white/10 pt-5 "
     >
       <img className=" -mt-28  " src={therapistData.image} />
