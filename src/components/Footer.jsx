@@ -1,6 +1,11 @@
 import { useNavigate } from "react-router-dom";
 import IconButton from "./ui/IconButton";
 
+import threadsIcon from "../../public/icons/threads.png";
+import telegramIcon from "../../public/icons/telegram.png";
+import instagramIcon from "../../public/icons/instagram.png";
+import twitterIcon from "../../public/icons/twitter.png";
+
 const Footer = () => {
   const openInNewTab = (url) => {
     const newWindow = window.open(url, "_blank", "noopener,noreferrer");
@@ -20,7 +25,7 @@ const Footer = () => {
               "https://www.threads.net/t/CuhAqm-L58t/?igshid=MzRlODBiNWFlZA==",
             )}
             className=" w-6 sm:w-8 md:w-10"
-            src="../../public/icons/threads.png"
+            src={threadsIcon}
           />
         </IconButton>
 
@@ -30,7 +35,7 @@ const Footer = () => {
               "https://t.me/janotancentre/16126?fbclid=PAAaY9EjNcAs4drJrHJswtZMzxyTmbe5sNXOcGJBMrNXlwoMH2VG_g5NVq7pc_aem_AS459JrttfKJB4h8k72Pe1opMdu11u0_fO_wdQomA_WU-d3tC3hvLtHfXAXRU6fbku4",
             )}
             className=" w-6 sm:w-8 md:w-10"
-            src="../../public/icons/telegram.png"
+            src={telegramIcon}
           />
         </IconButton>
 
@@ -40,7 +45,7 @@ const Footer = () => {
               "https://instagram.com/janotancenter?igshid=MzRlODBiNWFlZA==",
             )}
             className="w-6 sm:w-8 md:w-10"
-            src="../../public/icons/instagram.png"
+            src={instagramIcon}
           />
         </IconButton>
 
@@ -48,13 +53,13 @@ const Footer = () => {
           <img
             onClick={onClickUrl("https://x.com/janotancenter?s=11")}
             className="w-6 sm:w-8 md:w-10"
-            src="../../public/icons/twitter.png"
+            src={twitterIcon}
           />
         </IconButton>
       </div>
 
       <div className=" flex flex-col items-center gap-1  text-white">
-        <p className="py-5 text-xl sm:text-2xl md:text-3xl  ">
+        <p className="py-5 text-center text-lg  sm:text-2xl md:text-3xl ">
           اصفهان؛ خیابان‌ شیخ‌صدوق‌ شمالی؛ کوچه 56؛ ساختمان‌ سینا
         </p>
         <p

@@ -4,8 +4,8 @@ function TextBtn({ children, onClick, size, withIcon, ...restProps }) {
       {...restProps}
       type="button"
       className={` ${size ? size : ""} 
-  ${withIcon && "flex items-center gap-4 lg:gap-6 "}
-   cursor-pointer truncate   py-1.5  text-white       `}
+  ${withIcon && "  flex items-center gap-4   lg:gap-6 "}
+   cursor-pointer truncate whitespace-normal break-normal break-words   py-1.5  text-white       `}
       onClick={onClick}
     >
       {children}
