@@ -1,6 +1,7 @@
 import axios from "axios";
+import { BASE_URL } from "../utils/constants";
 
 export async function getLibraryBg() {
-  const { data } = await axios.get("http://62.60.131.191/api/librarybg/1");
+  const { data } = await axios.get(`${BASE_URL}api/librarybg/1`);
   return data;
 }

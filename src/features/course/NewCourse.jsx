@@ -18,23 +18,22 @@ function NewCourse() {
             {latestCourse.name}
           </h3>
 
-          <div className=" lg:-mr-16">
+          <div className=" -mr-16 lg:-mr-16">
             <TextBtn
-              size=" text-2xl md:text-3xl lg:text-4xl"
+              size="   w-full text-2xl md:text-3xl lg:text-4xl"
               withIcon={true}
               onClick={() => navigate(`/courses/${latestCourse.id}`)}
             >
               <img src={nextIcon} className=" mt-1 w-6  text-white lg:w-10" />
-              <p className=" mr-1 border-b border-transparent   hover:border-slate-200 md:text-[28.5px] lg:text-[43px] ">
+              <p
+                className=" mr-1    break-words border-b  border-transparent  hover:border-slate-200 md:text-[28.5px] lg:text-[43px] "
+                style={{ wordWrap: "break-word" }}
+              >
                 برای رزرو و ثبت این دوره کلیک کنید
               </p>
             </TextBtn>
           </div>
         </div>
-        {/* <img
-        className=" w-[80%]  min-w-[300px] max-w-[600px] object-cover lg:order-2 lg:w-1/2"
-        src={latestCourse.titleImage}
-      /> */}
         <img
           className="objecst-cover order-1 h-[180px]  w-[180px] min-w-[100px] max-w-[400px]   sm:order-2 md:h-[300px] md:w-[300px] lg:h-auto lg:w-auto"
           src={latestCourse.title_image}

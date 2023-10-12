@@ -1,13 +1,14 @@
 import axios from "axios";
+import { BASE_URL } from "../utils/constants";
 
 export async function getCourses() {
-  const { data } = await axios.get("http://62.60.131.191/api/courses");
+  const { data } = await axios.get(`${BASE_URL}api/courses`);
   return data;
 }
 
 export async function getCourse(id) {
   const { data } = await axios
-    .get(`http://62.60.131.191/api/courses/${id}`)
+    .get(`${BASE_URL}api/courses/${id}`)
     .catch(function (error) {
       if (error.response) {
         console.log(error.response.data);

@@ -66,11 +66,11 @@ function Courses() {
             className="   max-w-[295px] overflow-hidden "
             onClick={() => navigate(`/academy/${academyBook.id}`)}
           >
-            <div className=" relative  flex cursor-pointer items-center justify-center pb-6">
+            <div className=" relative flex  cursor-pointer items-center justify-center pb-6">
               <img
                 src={academyBook.image}
                 alt={academyBook.name}
-                className="   block h-full w-full overflow-hidden object-cover "
+                className="   block h-full w-full  object-cover "
               />
               <div className="absolute bottom-20 flex w-full flex-col items-center justify-center gap-2   text-center text-2xl text-white md:text-3xl">
                 <p>{academyBook.name}</p>
