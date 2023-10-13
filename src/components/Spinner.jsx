@@ -1,9 +1,10 @@
 import BlurBackground from "./ui/BlurBackground";
+import SpinnerIcon from "../../public/spinner/spinner.svg";
 
 function Spinner() {
   return (
     <BlurBackground>
-      <img src="../../public/spinner/spinner.svg" />
+      <img src={SpinnerIcon} />
     </BlurBackground>
   );
 }

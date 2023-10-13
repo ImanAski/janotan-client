@@ -5,6 +5,7 @@ import shoopingIcon from "../../public/icons/shopping.png";
 import profileIcon from "../../public/icons/profile.png";
 import searchIcon from "../../public/icons/search.png";
 import homeIcon from "../../public/icons/home-icon.png";
+import MenuPage from "../../public/icons/menu.png";
 
 function Navigation() {
   const navigate = useNavigate();
@@ -29,7 +30,7 @@ function Navigation() {
       </IconButton>
 
       <IconButton>
-        <img className=" w-6" src="../../public/icons/menu.png" />
+        <img className=" w-6" src={MenuPage} />
       </IconButton>
 
       <IconButton>
