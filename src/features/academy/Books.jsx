@@ -10,8 +10,8 @@ import "swiper/css/virtual";
 import { Virtual, Autoplay, Keyboard, Navigation } from "swiper/modules";
 
 //icons
-import nextArrow from "../../../public/icons/rightArrow.svg";
-import prevArrow from "../../../public/icons/leftArrow.svg";
+import nextArrow from "../../../public/icons/rightArrow2.png";
+import prevArrow from "../../../public/icons/leftArrow2.png";
 
 import { useAcademyBooks } from "../academy/useAcademyBooks";
 import { useNavigate } from "react-router-dom";
@@ -37,7 +37,7 @@ function Courses() {
           delay: 3500,
           disableOnInteraction: false,
         }}
-        loop={true}
+        // loop={true}
         navigation={{
           prevEl: ".arrow-left",
           nextEl: ".arrow-right",
@@ -47,11 +47,11 @@ function Courses() {
             slidesPerView: 2,
             spaceBetween: 20,
           },
-          768: {
+          1000: {
             slidesPerView: 3,
             spaceBetween: 20,
           },
-          1024: {
+          1250: {
             slidesPerView: 4,
             spaceBetween: 20,
           },
@@ -64,20 +64,20 @@ function Courses() {
           <SwiperSlide
             key={academyBook.name}
             virtualIndex={index}
-            className="   max-w-[295px] overflow-hidden "
+            className="    overflow-hidden "
             onClick={() => navigate(`/academy/${academyBook.id}`)}
           >
-            <div className=" relative flex  cursor-pointer items-center justify-center pb-6">
+            <div className=" relative  mt-16  flex h-[450px]   max-w-[300px]  cursor-pointer   items-center justify-center  rounded-3xl bg-white/10 ">
               <img
                 src={academyBook.image}
                 alt={academyBook.name}
-                className="   block h-full w-full  object-cover "
+                className=" -mt-56  w-5/6 max-w-[250px]  object-cover  "
               />
-              <div className="absolute bottom-12 flex w-full flex-col items-center justify-center gap-2 text-center   text-2xl text-white md:bottom-20 md:text-3xl">
-                <p className=" md:text-md text-md truncate whitespace-normal">
+              <div className="absolute bottom-20 flex w-full flex-col items-center justify-center gap-2 text-center   text-2xl text-white md:bottom-10 md:text-3xl">
+                <p className=" truncate whitespace-normal text-2xl ">
                   {academyBook.name}
                 </p>
-                <p className=" text-base md:text-2xl">
+                <p className=" text-xl md:text-2xl">
                   {priceFormatter(academyBook.price)} تومان
                 </p>
               </div>
@@ -92,14 +92,15 @@ function Courses() {
           </SwiperSlide>
         ))}
       </Swiper>
+
       <button
-        className=" arrow-left  arrow absolute left-5  top-1/2 w-[15%] max-w-[80px] p-5 sm:left-10 lg:w-[35%] lg:p-6  "
+        className="arrow-left absolute left-2  top-1/2   w-16  md:left-10 md:w-20   "
         style={{ transform: " translate(0, -50%)" }}
       >
         <img src={prevArrow} />
       </button>
       <button
-        className=" arrow-right arrow absolute right-5  top-1/2 w-[15%]  max-w-[80px] p-5 sm:right-10 lg:w-[35%] lg:p-6    "
+        className="arrow-right absolute right-2 top-1/2 w-16 md:right-10  md:w-20    "
         style={{ transform: " translate(0, -50%)" }}
       >
         <img src={nextArrow} />
