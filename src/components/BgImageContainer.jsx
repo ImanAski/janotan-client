@@ -4,7 +4,6 @@ import { useLibraryBg } from "../features/library/useLibraryBg";
 function BgImageContainer({ children, type, height }) {
   const { latestCourse } = useGetLatestCourse();
   const { libraryBg } = useLibraryBg();
-  console.log(latestCourse);
 
   return (
     <div
