@@ -20,7 +20,7 @@ function Courses() {
   const navigate = useNavigate();
 
   return (
-    <div className="  pb-32">
+    <div className="item flex justify-center   pb-32">
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
@@ -32,7 +32,7 @@ function Courses() {
           delay: 3500,
           disableOnInteraction: false,
         }}
-        loop={true}
+        // loop={true}
         breakpoints={{
           640: {
             slidesPerView: 2,
@@ -48,7 +48,7 @@ function Courses() {
           },
         }}
         modules={[Virtual, Autoplay, Keyboard, Navigation]}
-        className="mySwiper mx-20 max-w-[1240px] sm:mx-24 "
+        className="mySwiper mx-20  max-w-[1240px]  overflow-hidden "
         virtual={true}
       >
         {courses &&
@@ -56,13 +56,13 @@ function Courses() {
             <SwiperSlide
               key={course.name}
               virtualIndex={index}
-              className=" h-[400px]  overflow-hidden rounded-2xl "
+              className=" h-[400px]  overflow-hidden rounded-3xl "
               onClick={() => navigate(`/courses/${course.id}`)}
             >
               <img
-                src={course.bgImage}
+                src={course.image}
                 alt={course.name}
-                className=" h-full w-full cursor-pointer overflow-hidden object-cover "
+                className=" h-full w-full  cursor-pointer  overflow-hidden  object-cover"
               />
             </SwiperSlide>
           ))}

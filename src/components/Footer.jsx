@@ -24,7 +24,7 @@ const Footer = () => {
             onClick={onClickUrl(
               "https://www.threads.net/t/CuhAqm-L58t/?igshid=MzRlODBiNWFlZA==",
             )}
-            className=" w-6 sm:w-8 md:w-10"
+            className=" w-5 sm:w-8 md:w-10"
             src={threadsIcon}
           />
         </IconButton>
@@ -34,7 +34,7 @@ const Footer = () => {
             onClick={onClickUrl(
               "https://t.me/janotancentre/16126?fbclid=PAAaY9EjNcAs4drJrHJswtZMzxyTmbe5sNXOcGJBMrNXlwoMH2VG_g5NVq7pc_aem_AS459JrttfKJB4h8k72Pe1opMdu11u0_fO_wdQomA_WU-d3tC3hvLtHfXAXRU6fbku4",
             )}
-            className=" w-6 sm:w-8 md:w-10"
+            className=" w-5 sm:w-8 md:w-10"
             src={telegramIcon}
           />
         </IconButton>
@@ -44,7 +44,7 @@ const Footer = () => {
             onClick={onClickUrl(
               "https://instagram.com/janotancenter?igshid=MzRlODBiNWFlZA==",
             )}
-            className="w-6 sm:w-8 md:w-10"
+            className="w-5 sm:w-8 md:w-10"
             src={instagramIcon}
           />
         </IconButton>
@@ -52,7 +52,7 @@ const Footer = () => {
         <IconButton fill="true">
           <img
             onClick={onClickUrl("https://x.com/janotancenter?s=11")}
-            className="w-6 sm:w-8 md:w-10"
+            className="w-5 sm:w-8 md:w-10"
             src={twitterIcon}
           />
         </IconButton>
