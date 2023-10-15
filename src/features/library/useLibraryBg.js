@@ -16,8 +16,6 @@ export function useLibraryBg() {
     libraryBg = fakeLibraryBg;
   }
 
-  console.log(libraryBg);
-
   return { isLoading, libraryBg, error };
   // const isLoading = false;
   // return { isLoading, libraryBg };

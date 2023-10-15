@@ -16,7 +16,6 @@ import { useNavigate } from "react-router-dom";
 
 function Courses() {
   const { courses } = useCourses();
-  console.log(`courses in CoursesCompo : ${courses}`);
 
   const navigate = useNavigate();
 
@@ -49,7 +48,7 @@ function Courses() {
           },
         }}
         modules={[Virtual, Autoplay, Keyboard, Navigation]}
-        className="mySwiper mx-24 max-w-[1240px] "
+        className="mySwiper mx-20 max-w-[1240px] sm:mx-24 "
         virtual={true}
       >
         {courses &&

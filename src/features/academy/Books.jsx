@@ -17,6 +17,7 @@ import { useAcademyBooks } from "../academy/useAcademyBooks";
 import { useNavigate } from "react-router-dom";
 
 import discountIcon from "../../../public/icons/discount-icon.png";
+import { priceFormatter } from "../../utils/helpers";
 
 function Courses() {
   const { academyBooks } = useAcademyBooks();
@@ -24,7 +25,7 @@ function Courses() {
   const navigate = useNavigate();
 
   return (
-    <div className=" relative  w-full px-3  md:px-10  ">
+    <div className=" relative  w-full   md:px-10  ">
       <Swiper
         slidesPerView={1}
         spaceBetween={0}
@@ -56,7 +57,7 @@ function Courses() {
           },
         }}
         modules={[Virtual, Autoplay, Keyboard, Navigation]}
-        className="mySwiper mx-24   h-full max-w-[1240px] "
+        className="mySwiper mx-20  h-full   max-w-[1240px] md:mx-24 "
         virtual={true}
       >
         {academyBooks.map((academyBook, index) => (
@@ -72,9 +73,13 @@ function Courses() {
                 alt={academyBook.name}
                 className="   block h-full w-full  object-cover "
               />
-              <div className="absolute bottom-20 flex w-full flex-col items-center justify-center gap-2   text-center text-2xl text-white md:text-3xl">
-                <p>{academyBook.name}</p>
-                <p className=" text-2xl">{academyBook.price}</p>
+              <div className="absolute bottom-12 flex w-full flex-col items-center justify-center gap-2 text-center   text-2xl text-white md:bottom-20 md:text-3xl">
+                <p className=" md:text-md text-md truncate whitespace-normal">
+                  {academyBook.name}
+                </p>
+                <p className=" text-base md:text-2xl">
+                  {priceFormatter(academyBook.price)} تومان
+                </p>
               </div>
 
               {academyBook.discount && (
@@ -88,13 +93,13 @@ function Courses() {
         ))}
       </Swiper>
       <button
-        className=" arrow-left  arrow absolute  left-10 top-1/2 w-[15%] max-w-[80px] p-5 lg:w-[35%] lg:p-6  "
+        className=" arrow-left  arrow absolute left-5  top-1/2 w-[15%] max-w-[80px] p-5 sm:left-10 lg:w-[35%] lg:p-6  "
         style={{ transform: " translate(0, -50%)" }}
       >
         <img src={prevArrow} />
       </button>
       <button
-        className=" arrow-right arrow absolute   right-10 top-1/2  w-[15%] max-w-[80px] p-5 lg:w-[35%] lg:p-6    "
+        className=" arrow-right arrow absolute right-5  top-1/2 w-[15%]  max-w-[80px] p-5 sm:right-10 lg:w-[35%] lg:p-6    "
         style={{ transform: " translate(0, -50%)" }}
       >
         <img src={nextArrow} />

@@ -10,7 +10,7 @@ function PodcastSection() {
       <img src={podcastBg} />
       <img
         onClick={() => navigate("/podcast")}
-        className="  absolute bottom-10 w-3/4 cursor-pointer lg:bottom-32  lg:w-2/3"
+        className="  absolute bottom-8 w-5/6 cursor-pointer lg:bottom-32  lg:w-2/3"
         src={enterPodcast}
       />
     </div>

@@ -12,8 +12,6 @@ export function useCourses() {
     queryFn: getCourses,
   });
 
-  console.log(courses);
-
   return { isLoading, courses, error };
   // const isLoading = false;
   // return { isLoading, fakeCoursesData };

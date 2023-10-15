@@ -63,13 +63,13 @@ const Footer = () => {
           اصفهان؛ خیابان‌ شیخ‌صدوق‌ شمالی؛ کوچه 56؛ ساختمان‌ سینا
         </p>
         <p
-          className=" text-sm font-thin uppercase md:text-xl"
+          className=" text-xs font-thin uppercase md:text-xl"
           style={{ letterSpacing: "5px" }}
         >
           janotanCenter.ir
         </p>
         <p
-          className=" cursor-default text-sm  font-thin md:text-xl "
+          className=" cursor-default text-xs  font-thin md:text-xl "
           style={{ wordSpacing: "2px", letterSpacing: "3px" }}
         >
           all right reserved

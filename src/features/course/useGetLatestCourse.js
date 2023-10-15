@@ -3,7 +3,6 @@ import { courses as fakeCourses } from "../../data/courses";
 
 export function useGetLatestCourse() {
   const { isLoading: isCourseLoading, courses } = useCourses();
-  console.log(courses);
 
   let latestCourse;
   if (courses) {
@@ -12,6 +11,5 @@ export function useGetLatestCourse() {
     latestCourse = fakeCourses[0];
   }
 
-  console.log(latestCourse);
   return { isCourseLoading, latestCourse };
 }

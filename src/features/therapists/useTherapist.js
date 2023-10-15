@@ -16,7 +16,5 @@ export function useTherapist() {
     retry: false,
   });
 
-  console.log(therapist);
-
   return { isLoading, error, therapist };
 }
