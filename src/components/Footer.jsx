@@ -59,7 +59,7 @@ const Footer = () => {
       </div>
 
       <div className=" flex flex-col items-center gap-1  text-white">
-        <p className="py-5 text-center text-lg  sm:text-2xl md:text-3xl ">
+        <p className="py-5 text-center text-base  sm:text-2xl md:text-3xl ">
           اصفهان؛ خیابان‌ شیخ‌صدوق‌ شمالی؛ کوچه 56؛ ساختمان‌ سینا
         </p>
         <p
