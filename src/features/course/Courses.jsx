@@ -27,9 +27,13 @@ function Courses() {
         keyboard={{
           enabled: true,
         }}
+        speed={5000}
+        loop={true}
+        freeMode={true}
         dir="rtl"
         autoplay={{
-          delay: 3500,
+          delay: 1,
+          pauseOnMouseEnter: true,
           disableOnInteraction: false,
         }}
         breakpoints={{
